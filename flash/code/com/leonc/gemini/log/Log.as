@@ -1,4 +1,4 @@
-package com.scaleform.std.log {
+package com.leonc.gemini.log {
     import flash.external.*;
     public class Log {
         public static function Debug(info:String):void {

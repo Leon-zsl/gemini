@@ -1,6 +1,4 @@
-﻿//音频系统
-
-package com.scaleform.std.system
+﻿package com.leonc.gemini.system
 {
 	import flash.display.Stage;
     import flash.media.Sound;

@@ -1,6 +1,4 @@
-﻿//游戏场景对象
-
-package com.scaleform.std.levels
+﻿package com.leonc.gemini.level
 {
 	import flash.display.MovieClip;
     import flash.display.Sprite;
@@ -14,17 +12,16 @@ package com.scaleform.std.levels
 	import flash.media.Sound;
     import flash.media.SoundChannel;
     import flash.net.URLRequest;
-	
+
+	import fl.transitions.easing.*;
+
 	import scaleform.clik.motion.Tween;
-    import fl.transitions.easing.*;
-	
-	import com.scaleform.std.core.GameData;
-	import com.scaleform.std.utils.LaneGenerator;
-	import com.scaleform.std.utils.Constants;
-    import com.scaleform.std.utils.Utils;
-    import com.scaleform.std.utils.Layer;
-	
-	import scaleform.gfx.Extensions;
+    import scaleform.gfx.Extensions;
+
+	import com.leonc.gemini.util.LaneGenerator;
+	import com.leonc.gemini.util.Constants;
+    import com.leonc.gemini.util.Util;
+    import com.leonc.gemini.util.Layer;
 	
 	public class Level extends MovieClip
 	{
@@ -35,9 +32,7 @@ package com.scaleform.std.levels
 		{
 			super();
 			_xmlPath = pathToXml;
-			Utils.resetIds();
-			
-			
+			Util.resetIds();
 			
 			addEventListener( Event.ENTER_FRAME, configUI, false, 0, true );
 		}

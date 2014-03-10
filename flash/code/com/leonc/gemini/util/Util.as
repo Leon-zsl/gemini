@@ -1,11 +1,10 @@
-﻿
-package com.scaleform.std.utils
+﻿package com.leonc.gemini.util
 {
     import flash.geom.Point;
     
-    import com.scaleform.std.entities.Entity;
+    import com.leonc.gemini.entity.Entity;
 
-    public class Utils 
+    public class Util
     {
         public static var idCounter:uint = 0;
 		

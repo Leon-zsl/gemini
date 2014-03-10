@@ -1,6 +1,4 @@
-﻿//游戏资源加载系统
-
-package com.scaleform.std.system
+﻿package com.leonc.gemini.system
 {
 	import flash.display.Stage;
 	import flash.display.MovieClip;
@@ -13,8 +11,8 @@ package com.scaleform.std.system
     import flash.ui.Multitouch;
     import flash.ui.MultitouchInputMode;
 	
-	import com.scaleform.std.events.LoadingEvent;
-	import com.scaleform.std.loading.LoadingView;
+	import com.leonc.gemini.events.LoadingEvent;
+	import com.leonc.gemini.loading.LoadingView;
 	
 	public class LoadingSystem
 	{

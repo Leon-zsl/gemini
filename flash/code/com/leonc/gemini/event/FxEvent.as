@@ -1,6 +1,4 @@
-﻿//特效所需的事件
-
-package com.scaleform.std.events 
+﻿package com.leonc.gemini.event
 {
     
     import flash.events.Event;

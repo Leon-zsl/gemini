@@ -1,6 +1,4 @@
-﻿//特效对象
-
-package com.scaleform.std.effects
+﻿package com.leonc.gemini.effect
 {
     public class Effect 
     {

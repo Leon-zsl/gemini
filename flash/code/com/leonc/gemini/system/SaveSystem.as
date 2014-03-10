@@ -1,8 +1,5 @@
-﻿//玩家数据存储
-
-package com.scaleform.std.system
+﻿package com.leonc.gemini.system
 {
-	import com.scaleform.std.core.GameData;
     import flash.net.SharedObject;
 	
 	public class SaveSystem

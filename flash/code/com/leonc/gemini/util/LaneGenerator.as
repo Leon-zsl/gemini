@@ -1,5 +1,4 @@
-﻿
-package com.scaleform.std.utils
+﻿package com.leonc.gemini.util
 {
     import flash.display.MovieClip;
 
