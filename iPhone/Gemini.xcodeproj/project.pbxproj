@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15F75D3C18CDC2B600B5214A /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 15F75D3418CDC2B600B5214A /* Icon-72.png */; };
+		15F75D3D18CDC2B600B5214A /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 15F75D3518CDC2B600B5214A /* Icon-Small-50.png */; };
+		15F75D3E18CDC2B600B5214A /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 15F75D3618CDC2B600B5214A /* Icon-Small.png */; };
+		15F75D3F18CDC2B600B5214A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 15F75D3718CDC2B600B5214A /* Icon.png */; };
+		15F75D4018CDC2B600B5214A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15F75D3818CDC2B600B5214A /* Info.plist */; };
+		15F75D4118CDC2B600B5214A /* Info.plist.new in Resources */ = {isa = PBXBuildFile; fileRef = 15F75D3918CDC2B600B5214A /* Info.plist.new */; };
+		15F75D4218CDC2B600B5214A /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15F75D3A18CDC2B600B5214A /* MainWindow-iPad.xib */; };
+		15F75D4318CDC2B600B5214A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15F75D3B18CDC2B600B5214A /* MainWindow.xib */; };
+		15F75D4618CDC2DC00B5214A /* FxRenderThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75D4518CDC2DC00B5214A /* FxRenderThread.cpp */; };
+		15F75D4818CDC2FB00B5214A /* FxOnlineGameSystem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 15F75D4718CDC2FB00B5214A /* FxOnlineGameSystem.mm */; };
+		15F75D4A18CDC3D300B5214A /* Platform_IPhone_GL.mm in Sources */ = {isa = PBXBuildFile; fileRef = 15F75D4918CDC3D300B5214A /* Platform_IPhone_GL.mm */; };
+		15F75D4C18CDC41400B5214A /* FxSharedObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75D4B18CDC41400B5214A /* FxSharedObjectManager.cpp */; };
+		15F75D5018CDC50000B5214A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F75D4F18CDC50000B5214A /* Security.framework */; };
+		15F75D5218CDC50D00B5214A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15F75D5118CDC50D00B5214A /* Default-568h@2x.png */; };
+		15F75DF918CDCDEF00B5214A /* AssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DBD18CDCDEF00B5214A /* AssetManager.cpp */; };
+		15F75DFA18CDCDEF00B5214A /* AssetSettingUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DC018CDCDEF00B5214A /* AssetSettingUtil.cpp */; };
+		15F75DFB18CDCDEF00B5214A /* DownloadManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DC318CDCDEF00B5214A /* DownloadManager.cpp */; };
+		15F75DFC18CDCDEF00B5214A /* DownloadToFIleTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DC718CDCDEF00B5214A /* DownloadToFIleTask.cpp */; };
+		15F75DFD18CDCDEF00B5214A /* DownloadToMemoryTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DC918CDCDEF00B5214A /* DownloadToMemoryTask.cpp */; };
+		15F75DFE18CDCDEF00B5214A /* FileLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DCC18CDCDEF00B5214A /* FileLoader.cpp */; };
+		15F75DFF18CDCDEF00B5214A /* FileLoadTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DCF18CDCDEF00B5214A /* FileLoadTask.cpp */; };
+		15F75E0018CDCDEF00B5214A /* GlobalAllocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DD318CDCDEF00B5214A /* GlobalAllocator.cpp */; };
+		15F75E0118CDCDEF00B5214A /* Guard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DD518CDCDEF00B5214A /* Guard.cpp */; };
+		15F75E0218CDCDEF00B5214A /* Lock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DD718CDCDEF00B5214A /* Lock.cpp */; };
+		15F75E0318CDCDEF00B5214A /* SimpleAllocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DDC18CDCDEF00B5214A /* SimpleAllocator.cpp */; };
+		15F75E0418CDCDEF00B5214A /* Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DDE18CDCDEF00B5214A /* Thread.cpp */; };
+		15F75E0518CDCDEF00B5214A /* ThreadPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DE018CDCDEF00B5214A /* ThreadPool.cpp */; };
+		15F75E0618CDCDEF00B5214A /* AssetDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DE518CDCDEF00B5214A /* AssetDelegate.cpp */; };
+		15F75E0718CDCDEF00B5214A /* FxGameDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DE718CDCDEF00B5214A /* FxGameDelegate.cpp */; };
+		15F75E0818CDCDEF00B5214A /* GameDelegateManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DE918CDCDEF00B5214A /* GameDelegateManager.cpp */; };
+		15F75E0918CDCDEF00B5214A /* LogDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DEB18CDCDEF00B5214A /* LogDelegate.cpp */; };
+		15F75E0A18CDCDEF00B5214A /* PacketDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DEE18CDCDEF00B5214A /* PacketDelegate.cpp */; };
+		15F75E0B18CDCDEF00B5214A /* Packet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DF218CDCDEF00B5214A /* Packet.cpp */; };
+		15F75E0C18CDCDEF00B5214A /* PacketSock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DF518CDCDEF00B5214A /* PacketSock.cpp */; };
+		15F75E0D18CDCDEF00B5214A /* SockMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DF718CDCDEF00B5214A /* SockMgr.cpp */; };
+		15F75E1218CDCE2C00B5214A /* FxShippingPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75E0F18CDCE2C00B5214A /* FxShippingPlayer.cpp */; };
+		15F75E1418CDD12000B5214A /* main.swf in Resources */ = {isa = PBXBuildFile; fileRef = 15F75E1318CDD12000B5214A /* main.swf */; };
+		4919930E13020A8100985437 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919930D13020A8100985437 /* AudioToolbox.framework */; };
+		4919931013020A8100985437 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919930F13020A8100985437 /* CoreAudio.framework */; };
+		492EFAC70E3A1E5E00C654FA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F100CC0E031B0900F8734A /* OpenGLES.framework */; };
+		492EFAC80E3A1E5E00C654FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		492EFAC90E3A1E5E00C654FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		492EFACA0E3A1E5E00C654FA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F101010E031FF000F8734A /* QuartzCore.framework */; };
+		604196AF150F7DF100F9F66B /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604196AE150F7DF100F9F66B /* GameKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15F75D3418CDC2B600B5214A /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		15F75D3518CDC2B600B5214A /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		15F75D3618CDC2B600B5214A /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		15F75D3718CDC2B600B5214A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		15F75D3818CDC2B600B5214A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15F75D3918CDC2B600B5214A /* Info.plist.new */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info.plist.new; sourceTree = "<group>"; };
+		15F75D3A18CDC2B600B5214A /* MainWindow-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		15F75D3B18CDC2B600B5214A /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		15F75D4518CDC2DC00B5214A /* FxRenderThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FxRenderThread.cpp; path = ../../../../scaleform_4.2_ios_estore/Apps/Samples/Common/FxRenderThread.cpp; sourceTree = "<group>"; };
+		15F75D4718CDC2FB00B5214A /* FxOnlineGameSystem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = FxOnlineGameSystem.mm; path = ../../../../scaleform_4.2_ios_estore/Src/Platform/iPhone/FxOnlineGameSystem.mm; sourceTree = "<group>"; };
+		15F75D4918CDC3D300B5214A /* Platform_IPhone_GL.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Platform_IPhone_GL.mm; path = ../../../../scaleform_4.2_ios_estore/Src/Platform/Platform_IPhone_GL.mm; sourceTree = "<group>"; };
+		15F75D4B18CDC41400B5214A /* FxSharedObjectManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FxSharedObjectManager.cpp; path = ../../../../scaleform_4.2_ios_estore/Apps/Samples/Common/FxSharedObjectManager.cpp; sourceTree = "<group>"; };
+		15F75D4F18CDC50000B5214A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		15F75D5118CDC50D00B5214A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		15F75DBC18CDCDEF00B5214A /* AssetHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetHandler.h; sourceTree = "<group>"; };
+		15F75DBD18CDCDEF00B5214A /* AssetManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AssetManager.cpp; sourceTree = "<group>"; };
+		15F75DBE18CDCDEF00B5214A /* AssetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetManager.h; sourceTree = "<group>"; };
+		15F75DBF18CDCDEF00B5214A /* AssetManagerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetManagerConfig.h; sourceTree = "<group>"; };
+		15F75DC018CDCDEF00B5214A /* AssetSettingUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AssetSettingUtil.cpp; sourceTree = "<group>"; };
+		15F75DC118CDCDEF00B5214A /* AssetSettingUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetSettingUtil.h; sourceTree = "<group>"; };
+		15F75DC218CDCDEF00B5214A /* DownloadConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadConfig.h; sourceTree = "<group>"; };
+		15F75DC318CDCDEF00B5214A /* DownloadManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DownloadManager.cpp; sourceTree = "<group>"; };
+		15F75DC418CDCDEF00B5214A /* DownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		15F75DC518CDCDEF00B5214A /* DownloadStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadStatus.h; sourceTree = "<group>"; };
+		15F75DC618CDCDEF00B5214A /* DownloadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTask.h; sourceTree = "<group>"; };
+		15F75DC718CDCDEF00B5214A /* DownloadToFIleTask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DownloadToFIleTask.cpp; sourceTree = "<group>"; };
+		15F75DC818CDCDEF00B5214A /* DownloadToFileTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadToFileTask.h; sourceTree = "<group>"; };
+		15F75DC918CDCDEF00B5214A /* DownloadToMemoryTask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DownloadToMemoryTask.cpp; sourceTree = "<group>"; };
+		15F75DCA18CDCDEF00B5214A /* DownloadToMemoryTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadToMemoryTask.h; sourceTree = "<group>"; };
+		15F75DCB18CDCDEF00B5214A /* FileLoadConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileLoadConfig.h; sourceTree = "<group>"; };
+		15F75DCC18CDCDEF00B5214A /* FileLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileLoader.cpp; sourceTree = "<group>"; };
+		15F75DCD18CDCDEF00B5214A /* FileLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileLoader.h; sourceTree = "<group>"; };
+		15F75DCE18CDCDEF00B5214A /* FileLoadStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileLoadStatus.h; sourceTree = "<group>"; };
+		15F75DCF18CDCDEF00B5214A /* FileLoadTask.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileLoadTask.cpp; sourceTree = "<group>"; };
+		15F75DD018CDCDEF00B5214A /* FileLoadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileLoadTask.h; sourceTree = "<group>"; };
+		15F75DD218CDCDEF00B5214A /* BlockQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockQueue.h; sourceTree = "<group>"; };
+		15F75DD318CDCDEF00B5214A /* GlobalAllocator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GlobalAllocator.cpp; sourceTree = "<group>"; };
+		15F75DD418CDCDEF00B5214A /* GlobalAllocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalAllocator.h; sourceTree = "<group>"; };
+		15F75DD518CDCDEF00B5214A /* Guard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Guard.cpp; sourceTree = "<group>"; };
+		15F75DD618CDCDEF00B5214A /* Guard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Guard.h; sourceTree = "<group>"; };
+		15F75DD718CDCDEF00B5214A /* Lock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lock.cpp; sourceTree = "<group>"; };
+		15F75DD818CDCDEF00B5214A /* Lock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lock.h; sourceTree = "<group>"; };
+		15F75DD918CDCDEF00B5214A /* MemoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryManager.h; sourceTree = "<group>"; };
+		15F75DDA18CDCDEF00B5214A /* PathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathUtil.h; sourceTree = "<group>"; };
+		15F75DDB18CDCDEF00B5214A /* Runner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runner.h; sourceTree = "<group>"; };
+		15F75DDC18CDCDEF00B5214A /* SimpleAllocator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleAllocator.cpp; sourceTree = "<group>"; };
+		15F75DDD18CDCDEF00B5214A /* SimpleAllocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAllocator.h; sourceTree = "<group>"; };
+		15F75DDE18CDCDEF00B5214A /* Thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Thread.cpp; sourceTree = "<group>"; };
+		15F75DDF18CDCDEF00B5214A /* Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thread.h; sourceTree = "<group>"; };
+		15F75DE018CDCDEF00B5214A /* ThreadPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThreadPool.cpp; sourceTree = "<group>"; };
+		15F75DE118CDCDEF00B5214A /* ThreadPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadPool.h; sourceTree = "<group>"; };
+		15F75DE218CDCDEF00B5214A /* UniformAllocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniformAllocator.h; sourceTree = "<group>"; };
+		15F75DE318CDCDEF00B5214A /* UniformAllocator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UniformAllocator.hpp; sourceTree = "<group>"; };
+		15F75DE518CDCDEF00B5214A /* AssetDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AssetDelegate.cpp; sourceTree = "<group>"; };
+		15F75DE618CDCDEF00B5214A /* AssetDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetDelegate.h; sourceTree = "<group>"; };
+		15F75DE718CDCDEF00B5214A /* FxGameDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FxGameDelegate.cpp; sourceTree = "<group>"; };
+		15F75DE818CDCDEF00B5214A /* FxGameDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FxGameDelegate.h; sourceTree = "<group>"; };
+		15F75DE918CDCDEF00B5214A /* GameDelegateManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameDelegateManager.cpp; sourceTree = "<group>"; };
+		15F75DEA18CDCDEF00B5214A /* GameDelegateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDelegateManager.h; sourceTree = "<group>"; };
+		15F75DEB18CDCDEF00B5214A /* LogDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogDelegate.cpp; sourceTree = "<group>"; };
+		15F75DEC18CDCDEF00B5214A /* LogDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogDelegate.h; sourceTree = "<group>"; };
+		15F75DED18CDCDEF00B5214A /* MagicDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicDelegate.h; sourceTree = "<group>"; };
+		15F75DEE18CDCDEF00B5214A /* PacketDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PacketDelegate.cpp; sourceTree = "<group>"; };
+		15F75DEF18CDCDEF00B5214A /* PacketDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketDelegate.h; sourceTree = "<group>"; };
+		15F75DF018CDCDEF00B5214A /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		15F75DF218CDCDEF00B5214A /* Packet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Packet.cpp; sourceTree = "<group>"; };
+		15F75DF318CDCDEF00B5214A /* Packet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Packet.h; sourceTree = "<group>"; };
+		15F75DF418CDCDEF00B5214A /* PacketHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketHandler.h; sourceTree = "<group>"; };
+		15F75DF518CDCDEF00B5214A /* PacketSock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PacketSock.cpp; sourceTree = "<group>"; };
+		15F75DF618CDCDEF00B5214A /* PacketSock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketSock.h; sourceTree = "<group>"; };
+		15F75DF718CDCDEF00B5214A /* SockMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SockMgr.cpp; sourceTree = "<group>"; };
+		15F75DF818CDCDEF00B5214A /* SockMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SockMgr.h; sourceTree = "<group>"; };
+		15F75E0F18CDCE2C00B5214A /* FxShippingPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FxShippingPlayer.cpp; path = ../src/FxShippingPlayer.cpp; sourceTree = "<group>"; };
+		15F75E1018CDCE2C00B5214A /* FxShippingPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FxShippingPlayer.h; path = ../src/FxShippingPlayer.h; sourceTree = "<group>"; };
+		15F75E1118CDCE2C00B5214A /* FxShippingPlayerOptions_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FxShippingPlayerOptions_iPhone.h; path = ../src/FxShippingPlayerOptions_iPhone.h; sourceTree = "<group>"; };
+		15F75E1318CDD12000B5214A /* main.swf */ = {isa = PBXFileReference; lastKnownFileType = file; name = main.swf; path = ../flash/swf/main.swf; sourceTree = "<group>"; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4919930D13020A8100985437 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4919930F13020A8100985437 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		492EFACE0E3A1E5E00C654FA /* Gemini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gemini.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49F100CC0E031B0900F8734A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		49F101010E031FF000F8734A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		604196AE150F7DF100F9F66B /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		492EFAC60E3A1E5E00C654FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F75D5018CDC50000B5214A /* Security.framework in Frameworks */,
+				492EFAC70E3A1E5E00C654FA /* OpenGLES.framework in Frameworks */,
+				492EFAC80E3A1E5E00C654FA /* UIKit.framework in Frameworks */,
+				492EFAC90E3A1E5E00C654FA /* Foundation.framework in Frameworks */,
+				492EFACA0E3A1E5E00C654FA /* QuartzCore.framework in Frameworks */,
+				4919930E13020A8100985437 /* AudioToolbox.framework in Frameworks */,
+				4919931013020A8100985437 /* CoreAudio.framework in Frameworks */,
+				604196AF150F7DF100F9F66B /* GameKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15F75D4418CDC2C500B5214A /* Scaleform */ = {
+			isa = PBXGroup;
+			children = (
+				15F75D4B18CDC41400B5214A /* FxSharedObjectManager.cpp */,
+				15F75D4918CDC3D300B5214A /* Platform_IPhone_GL.mm */,
+				15F75D4718CDC2FB00B5214A /* FxOnlineGameSystem.mm */,
+				15F75D4518CDC2DC00B5214A /* FxRenderThread.cpp */,
+			);
+			name = Scaleform;
+			sourceTree = "<group>";
+		};
+		15F75DBB18CDCDEF00B5214A /* AssetManager */ = {
+			isa = PBXGroup;
+			children = (
+				15F75DBC18CDCDEF00B5214A /* AssetHandler.h */,
+				15F75DBD18CDCDEF00B5214A /* AssetManager.cpp */,
+				15F75DBE18CDCDEF00B5214A /* AssetManager.h */,
+				15F75DBF18CDCDEF00B5214A /* AssetManagerConfig.h */,
+				15F75DC018CDCDEF00B5214A /* AssetSettingUtil.cpp */,
+				15F75DC118CDCDEF00B5214A /* AssetSettingUtil.h */,
+				15F75DC218CDCDEF00B5214A /* DownloadConfig.h */,
+				15F75DC318CDCDEF00B5214A /* DownloadManager.cpp */,
+				15F75DC418CDCDEF00B5214A /* DownloadManager.h */,
+				15F75DC518CDCDEF00B5214A /* DownloadStatus.h */,
+				15F75DC618CDCDEF00B5214A /* DownloadTask.h */,
+				15F75DC718CDCDEF00B5214A /* DownloadToFIleTask.cpp */,
+				15F75DC818CDCDEF00B5214A /* DownloadToFileTask.h */,
+				15F75DC918CDCDEF00B5214A /* DownloadToMemoryTask.cpp */,
+				15F75DCA18CDCDEF00B5214A /* DownloadToMemoryTask.h */,
+				15F75DCB18CDCDEF00B5214A /* FileLoadConfig.h */,
+				15F75DCC18CDCDEF00B5214A /* FileLoader.cpp */,
+				15F75DCD18CDCDEF00B5214A /* FileLoader.h */,
+				15F75DCE18CDCDEF00B5214A /* FileLoadStatus.h */,
+				15F75DCF18CDCDEF00B5214A /* FileLoadTask.cpp */,
+				15F75DD018CDCDEF00B5214A /* FileLoadTask.h */,
+			);
+			name = AssetManager;
+			path = ../src/AssetManager;
+			sourceTree = "<group>";
+		};
+		15F75DD118CDCDEF00B5214A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				15F75DD218CDCDEF00B5214A /* BlockQueue.h */,
+				15F75DD318CDCDEF00B5214A /* GlobalAllocator.cpp */,
+				15F75DD418CDCDEF00B5214A /* GlobalAllocator.h */,
+				15F75DD518CDCDEF00B5214A /* Guard.cpp */,
+				15F75DD618CDCDEF00B5214A /* Guard.h */,
+				15F75DD718CDCDEF00B5214A /* Lock.cpp */,
+				15F75DD818CDCDEF00B5214A /* Lock.h */,
+				15F75DD918CDCDEF00B5214A /* MemoryManager.h */,
+				15F75DDA18CDCDEF00B5214A /* PathUtil.h */,
+				15F75DDB18CDCDEF00B5214A /* Runner.h */,
+				15F75DDC18CDCDEF00B5214A /* SimpleAllocator.cpp */,
+				15F75DDD18CDCDEF00B5214A /* SimpleAllocator.h */,
+				15F75DDE18CDCDEF00B5214A /* Thread.cpp */,
+				15F75DDF18CDCDEF00B5214A /* Thread.h */,
+				15F75DE018CDCDEF00B5214A /* ThreadPool.cpp */,
+				15F75DE118CDCDEF00B5214A /* ThreadPool.h */,
+				15F75DE218CDCDEF00B5214A /* UniformAllocator.h */,
+				15F75DE318CDCDEF00B5214A /* UniformAllocator.hpp */,
+			);
+			name = Base;
+			path = ../src/Base;
+			sourceTree = "<group>";
+		};
+		15F75DE418CDCDEF00B5214A /* GameDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				15F75DE518CDCDEF00B5214A /* AssetDelegate.cpp */,
+				15F75DE618CDCDEF00B5214A /* AssetDelegate.h */,
+				15F75DE718CDCDEF00B5214A /* FxGameDelegate.cpp */,
+				15F75DE818CDCDEF00B5214A /* FxGameDelegate.h */,
+				15F75DE918CDCDEF00B5214A /* GameDelegateManager.cpp */,
+				15F75DEA18CDCDEF00B5214A /* GameDelegateManager.h */,
+				15F75DEB18CDCDEF00B5214A /* LogDelegate.cpp */,
+				15F75DEC18CDCDEF00B5214A /* LogDelegate.h */,
+				15F75DED18CDCDEF00B5214A /* MagicDelegate.h */,
+				15F75DEE18CDCDEF00B5214A /* PacketDelegate.cpp */,
+				15F75DEF18CDCDEF00B5214A /* PacketDelegate.h */,
+				15F75DF018CDCDEF00B5214A /* Singleton.h */,
+			);
+			name = GameDelegate;
+			path = ../src/GameDelegate;
+			sourceTree = "<group>";
+		};
+		15F75DF118CDCDEF00B5214A /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				15F75DF218CDCDEF00B5214A /* Packet.cpp */,
+				15F75DF318CDCDEF00B5214A /* Packet.h */,
+				15F75DF418CDCDEF00B5214A /* PacketHandler.h */,
+				15F75DF518CDCDEF00B5214A /* PacketSock.cpp */,
+				15F75DF618CDCDEF00B5214A /* PacketSock.h */,
+				15F75DF718CDCDEF00B5214A /* SockMgr.cpp */,
+				15F75DF818CDCDEF00B5214A /* SockMgr.h */,
+			);
+			name = NetWork;
+			path = ../src/NetWork;
+			sourceTree = "<group>";
+		};
+		15F75E0E18CDCE1E00B5214A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				15F75E0F18CDCE2C00B5214A /* FxShippingPlayer.cpp */,
+				15F75E1018CDCE2C00B5214A /* FxShippingPlayer.h */,
+				15F75E1118CDCE2C00B5214A /* FxShippingPlayerOptions_iPhone.h */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				492EFACE0E3A1E5E00C654FA /* Gemini.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				15F75E0E18CDCE1E00B5214A /* Sources */,
+				15F75DBB18CDCDEF00B5214A /* AssetManager */,
+				15F75DD118CDCDEF00B5214A /* Base */,
+				15F75DE418CDCDEF00B5214A /* GameDelegate */,
+				15F75DF118CDCDEF00B5214A /* NetWork */,
+				15F75D4418CDC2C500B5214A /* Scaleform */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				15F75E1318CDD12000B5214A /* main.swf */,
+				15F75D5118CDC50D00B5214A /* Default-568h@2x.png */,
+				15F75D3418CDC2B600B5214A /* Icon-72.png */,
+				15F75D3518CDC2B600B5214A /* Icon-Small-50.png */,
+				15F75D3618CDC2B600B5214A /* Icon-Small.png */,
+				15F75D3718CDC2B600B5214A /* Icon.png */,
+				15F75D3818CDC2B600B5214A /* Info.plist */,
+				15F75D3918CDC2B600B5214A /* Info.plist.new */,
+				15F75D3A18CDC2B600B5214A /* MainWindow-iPad.xib */,
+				15F75D3B18CDC2B600B5214A /* MainWindow.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15F75D4F18CDC50000B5214A /* Security.framework */,
+				604196AE150F7DF100F9F66B /* GameKit.framework */,
+				4919930F13020A8100985437 /* CoreAudio.framework */,
+				4919930D13020A8100985437 /* AudioToolbox.framework */,
+				49F101010E031FF000F8734A /* QuartzCore.framework */,
+				49F100CC0E031B0900F8734A /* OpenGLES.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		492EFABE0E3A1E5E00C654FA /* Gemini */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492EFACB0E3A1E5E00C654FA /* Build configuration list for PBXNativeTarget "Gemini" */;
+			buildPhases = (
+				492EFABF0E3A1E5E00C654FA /* Resources */,
+				492EFAC20E3A1E5E00C654FA /* Sources */,
+				492EFAC60E3A1E5E00C654FA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gemini;
+			productName = Gemini;
+			productReference = 492EFACE0E3A1E5E00C654FA /* Gemini.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Gemini" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = ../../..;
+			targets = (
+				492EFABE0E3A1E5E00C654FA /* Gemini */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		492EFABF0E3A1E5E00C654FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F75D3F18CDC2B600B5214A /* Icon.png in Resources */,
+				15F75D3C18CDC2B600B5214A /* Icon-72.png in Resources */,
+				15F75D5218CDC50D00B5214A /* Default-568h@2x.png in Resources */,
+				15F75D4218CDC2B600B5214A /* MainWindow-iPad.xib in Resources */,
+				15F75D4118CDC2B600B5214A /* Info.plist.new in Resources */,
+				15F75D4318CDC2B600B5214A /* MainWindow.xib in Resources */,
+				15F75D3D18CDC2B600B5214A /* Icon-Small-50.png in Resources */,
+				15F75D4018CDC2B600B5214A /* Info.plist in Resources */,
+				15F75D3E18CDC2B600B5214A /* Icon-Small.png in Resources */,
+				15F75E1418CDD12000B5214A /* main.swf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		492EFAC20E3A1E5E00C654FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F75DFF18CDCDEF00B5214A /* FileLoadTask.cpp in Sources */,
+				15F75D4618CDC2DC00B5214A /* FxRenderThread.cpp in Sources */,
+				15F75DFA18CDCDEF00B5214A /* AssetSettingUtil.cpp in Sources */,
+				15F75E0418CDCDEF00B5214A /* Thread.cpp in Sources */,
+				15F75E0318CDCDEF00B5214A /* SimpleAllocator.cpp in Sources */,
+				15F75DF918CDCDEF00B5214A /* AssetManager.cpp in Sources */,
+				15F75E0D18CDCDEF00B5214A /* SockMgr.cpp in Sources */,
+				15F75D4C18CDC41400B5214A /* FxSharedObjectManager.cpp in Sources */,
+				15F75DFE18CDCDEF00B5214A /* FileLoader.cpp in Sources */,
+				15F75E0518CDCDEF00B5214A /* ThreadPool.cpp in Sources */,
+				15F75E0218CDCDEF00B5214A /* Lock.cpp in Sources */,
+				15F75E0A18CDCDEF00B5214A /* PacketDelegate.cpp in Sources */,
+				15F75D4A18CDC3D300B5214A /* Platform_IPhone_GL.mm in Sources */,
+				15F75E0118CDCDEF00B5214A /* Guard.cpp in Sources */,
+				15F75E0818CDCDEF00B5214A /* GameDelegateManager.cpp in Sources */,
+				15F75DFC18CDCDEF00B5214A /* DownloadToFIleTask.cpp in Sources */,
+				15F75E1218CDCE2C00B5214A /* FxShippingPlayer.cpp in Sources */,
+				15F75E0718CDCDEF00B5214A /* FxGameDelegate.cpp in Sources */,
+				15F75E0618CDCDEF00B5214A /* AssetDelegate.cpp in Sources */,
+				15F75DFD18CDCDEF00B5214A /* DownloadToMemoryTask.cpp in Sources */,
+				15F75E0918CDCDEF00B5214A /* LogDelegate.cpp in Sources */,
+				15F75D4818CDC2FB00B5214A /* FxOnlineGameSystem.mm in Sources */,
+				15F75E0B18CDCDEF00B5214A /* Packet.cpp in Sources */,
+				15F75E0018CDCDEF00B5214A /* GlobalAllocator.cpp in Sources */,
+				15F75DFB18CDCDEF00B5214A /* DownloadManager.cpp in Sources */,
+				15F75E0C18CDCDEF00B5214A /* PacketSock.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		492EFACC0E3A1E5E00C654FA /* Debug_NoRTTI */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Leon Zhang (8E37LG4345)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Leon Zhang (8E37LG4345)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"\"~/scaleform_4.2_ios_estore/Src\"",
+					"\"~/scaleform_4.2_ios_estore/Src/GFx\"",
+					"\"~/scaleform_4.2_ios_estore/Src/Kernel\"",
+					"\"~/scaleform_4.2_ios_estore/Src/Platform\"",
+					"\"~/scaleform_4.2_ios_estore/Src/Render\"",
+					"\"~/scaleform_4.2_ios_estore/Include\"",
+					"\"~/scaleform_4.2_ios_estore/Apps/Samples/Common\"",
+					"\"~/scaleform_4.2_ios_estore/3rdParty/fmod/iPhone/inc\"",
+					"\"$(SRCROOT)/../include\"/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"\"~/scaleform_4.2_ios_estore/Lib/iPhone-${CURRENT_ARCH}/${CONFIGURATION}\"",
+					"\"~/scaleform_4.2_ios_estore/Lib/iPhone-${CURRENT_ARCH}\"",
+					"~/scaleform_4.2_ios_estore/3rdParty/fmod/iPhone/lib",
+					"\"$(SRCROOT)/../lib\"",
+				);
+				OTHER_CFLAGS = "-DSF_BUILD_DEBUG";
+				OTHER_LDFLAGS = (
+					"-lgfx",
+					"-lgfxrender_gl",
+					"-lgfx_as2",
+					"-lgfx_as3",
+					"-lgfxplatform",
+					"-lgfxexpat",
+					"-lgfxsound_null",
+					"-lexpat",
+					"-lpng",
+					"-lpcre",
+					"-ljpeg",
+					"-lz",
+					"-lcurl",
+				);
+				PRODUCT_NAME = Gemini;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug_NoRTTI;
+		};
+		492EFACD0E3A1E5E00C654FA /* Release_NoRTTI */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Leon Zhang (8E37LG4345)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"\"~/scaleform_4.2_ios_estore/Src\"",
+					"\"~/scaleform_4.2_ios_estore/Src/Kernel\"",
+					"\"~/scaleform_4.2_ios_estore/Src/GFx\"",
+					"\"~/scaleform_4.2_ios_estore/Src/Platform\"",
+					"\"~/scaleform_4.2_ios_estore/Src/Render\"",
+					"\"~/scaleform_4.2_ios_estore/Include\"",
+					"\"~/scaleform_4.2_ios_estore/Apps/Samples/Common\"",
+					"\"~/scaleform_4.2_ios_estore/3rdParty/fmod/iPhone/inc\"",
+					"\"$(SRCROOT)/../include\"/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"\"~/scaleform_4.2_ios_estore/Lib/iPhone-${CURRENT_ARCH}/${CONFIGURATION}\"",
+					"\"~/scaleform_4.2_ios_estore/Lib/iPhone-${CURRENT_ARCH}\"",
+					"\"~/scaleform_4.2_ios_estore/3rdParty/fmod/iPhone/lib\"",
+					"\"$(SRCROOT)/../lib\"",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-lgfx",
+					"-lgfxrender_gl",
+					"-lgfx_as2",
+					"-lgfx_as3",
+					"-lgfxplatform",
+					"-lgfxexpat",
+					"-lgfxsound_null",
+					"-lexpat",
+					"-lpng",
+					"-lpcre",
+					"-ljpeg",
+					"-lz",
+					"-lcurl",
+				);
+				PRODUCT_NAME = Gemini;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				ZERO_LINK = NO;
+			};
+			name = Release_NoRTTI;
+		};
+		49D18936128DA54300FB4754 /* DebugOpt_NoRTTI */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Leon Zhang (8E37LG4345)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Leon Zhang (8E37LG4345)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = SF_BUILD_DEBUG;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../Src\"",
+					"\"$(SRCROOT)/../../../Src/GFx\"",
+					"\"$(SRCROOT)/../../../Src/Kernel\"",
+					"\"$(SRCROOT)/../../../Src/Render\"",
+					"\"$(SRCROOT)/../../../Src/Platform\"",
+					"\"$(SRCROOT)/../../../Include\"",
+					"\"$(SRCROOT)/../../../Apps/Samples/Common\"",
+					"\"$(SRCROOT)/../../../3rdParty/fmod/iPhone/inc\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../Lib/iPhone-${CURRENT_ARCH}/${CONFIGURATION}\"/**",
+					"\"$(SRCROOT)/../../../Lib/iPhone-${CURRENT_ARCH}\"",
+					"\"$(SRCROOT)/../../../3rdParty/fmod/iPhone/lib\"",
+				);
+				OBJROOT = Obj/iPhone/Xcode4;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				PROVISIONING_PROFILE = "CA5DB260-0CF6-440F-82C2-207D81E91772";
+				SDKROOT = iphoneos;
+				SYMROOT = Bin/iPhone;
+				VALID_ARCHS = armv7;
+			};
+			name = DebugOpt_NoRTTI;
+		};
+		49D18938128DA54300FB4754 /* DebugOpt_NoRTTI */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Leon Zhang (8E37LG4345)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DSF_BUILD_DEBUG";
+				OTHER_LDFLAGS = (
+					"-lgfx",
+					"-lgfxrender_gl",
+					"-lgfx_as2",
+					"-lgfx_as3",
+					"-lgfxplatform",
+					"-lgfxexpat",
+					"-lgfxsound_null",
+					"-lexpat",
+					"-lpng",
+					"-lpcre",
+					"-ljpeg",
+					"-lz",
+					"-lcurl",
+				);
+				PRODUCT_NAME = Gemini;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = DebugOpt_NoRTTI;
+		};
+		A4DF0D3E1321926400CD6A45 /* Shipping_NoRTTI */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Leon Zhang (8E37LG4345)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Leon Zhang (8E37LG4345)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = SF_BUILD_SHIPPING;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../Src\"",
+					"\"$(SRCROOT)/../../../Src/Kernel\"",
+					"\"$(SRCROOT)/../../../Src/GFx\"",
+					"\"$(SRCROOT)/../../../Src/Platform\"",
+					"\"$(SRCROOT)/../../../Src/Render\"",
+					"\"$(SRCROOT)/../../../Include\"",
+					"\"$(SRCROOT)/../../../Apps/Samples/Common\"",
+					"\"$(SRCROOT)/../../../3rdParty/fmod/iPhone/inc\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../Lib/iPhone-${CURRENT_ARCH}/${CONFIGURATION}\"/**",
+					"\"$(SRCROOT)/../../../Lib/iPhone-${CURRENT_ARCH}\"",
+					"\"$(SRCROOT)/../../../3rdParty/fmod/iPhone/lib\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-lgfx",
+					"-lgfxrender_gl",
+					"-lgfx_as2",
+					"-lgfx_as3",
+					"-lgfxsound_fmod",
+					"-lgfxplatform",
+					"-lgfxexpat",
+					"-lexpat",
+					"-lpng",
+					"-lpcre",
+					"-ljpeg",
+					"-lz",
+				);
+				PROVISIONING_PROFILE = "CA5DB260-0CF6-440F-82C2-207D81E91772";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = armv7;
+			};
+			name = Shipping_NoRTTI;
+		};
+		A4DF0D3F1321926400CD6A45 /* Shipping_NoRTTI */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Leon Zhang (8E37LG4345)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"\"~/scaleform_4.2_ios_estore/Src\"",
+					"\"~/scaleform_4.2_ios_estore/Src/Kernel\"",
+					"\"~/scaleform_4.2_ios_estore/Src/GFx\"",
+					"\"~/scaleform_4.2_ios_estore/Src/Platform\"",
+					"\"~/scaleform_4.2_ios_estore/Src/Render\"",
+					"\"~/scaleform_4.2_ios_estore/Include\"",
+					"\"~/scaleform_4.2_ios_estore/Apps/Samples/Common\"",
+					"\"~/scaleform_4.2_ios_estore/3rdParty/fmod/iPhone/inc\"",
+					"\"$(SRCROOT)/../include\"/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"\"~/scaleform_4.2_ios_estore/Lib/iPhone-${CURRENT_ARCH}/${CONFIGURATION}\"",
+					"\"~/scaleform_4.2_ios_estore/Lib/iPhone-${CURRENT_ARCH}\"",
+					"\"~/scaleform_4.2_ios_estore/3rdParty/fmod/iPhone/lib\"",
+					"\"$(SRCROOT)/../lib\"",
+				);
+				OTHER_CFLAGS = "-DSF_BUILD_SHIPPING";
+				OTHER_LDFLAGS = (
+					"-lgfx",
+					"-lgfxrender_gl",
+					"-lgfx_as2",
+					"-lgfx_as3",
+					"-lgfxplatform",
+					"-lgfxexpat",
+					"-lgfxsound_null",
+					"-lexpat",
+					"-lpng",
+					"-lpcre",
+					"-ljpeg",
+					"-lz",
+					"-lcurl",
+				);
+				PRODUCT_NAME = Gemini;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				ZERO_LINK = NO;
+			};
+			name = Shipping_NoRTTI;
+		};
+		C01FCF4F08A954540054247B /* Debug_NoRTTI */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Leon Zhang (8E37LG4345)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Leon Zhang (8E37LG4345)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = SF_BUILD_DEBUG;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../Src\"",
+					"\"$(SRCROOT)/../../../Src/GFx\"",
+					"\"$(SRCROOT)/../../../Src/Kernel\"",
+					"\"$(SRCROOT)/../../../Src/Platform\"",
+					"\"$(SRCROOT)/../../../Src/Render\"",
+					"\"$(SRCROOT)/../../../Include\"",
+					"\"$(SRCROOT)/../../../Apps/Samples/Common\"",
+					"\"$(SRCROOT)/../../../3rdParty/fmod/iPhone/inc\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../Lib/iPhone-${CURRENT_ARCH}/${CONFIGURATION}\"/**",
+					"\"$(SRCROOT)/../../../Lib/iPhone-${CURRENT_ARCH}\"",
+					"\"$(SRCROOT)/../../../3rdParty/fmod/iPhone/lib\"",
+				);
+				OBJROOT = Obj/iPhone/Xcode4;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				PROVISIONING_PROFILE = "CA5DB260-0CF6-440F-82C2-207D81E91772";
+				SDKROOT = iphoneos;
+				SYMROOT = Bin/iPhone;
+				VALID_ARCHS = armv7;
+			};
+			name = Debug_NoRTTI;
+		};
+		C01FCF5008A954540054247B /* Release_NoRTTI */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Leon Zhang (8E37LG4345)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Leon Zhang (8E37LG4345)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../Src\"",
+					"\"$(SRCROOT)/../../../Src/Kernel\"",
+					"\"$(SRCROOT)/../../../Src/GFx\"",
+					"\"$(SRCROOT)/../../../Src/Platform\"",
+					"\"$(SRCROOT)/../../../Src/Render\"",
+					"\"$(SRCROOT)/../../../Include\"",
+					"\"$(SRCROOT)/../../../Apps/Samples/Common\"",
+					"\"$(SRCROOT)/../../../3rdParty/fmod/iPhone/inc\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../Lib/iPhone-${CURRENT_ARCH}/${CONFIGURATION}\"/**",
+					"\"$(SRCROOT)/../../../Lib/iPhone-${CURRENT_ARCH}\"",
+					"\"$(SRCROOT)/../../../3rdParty/fmod/iPhone/lib\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				PROVISIONING_PROFILE = "CA5DB260-0CF6-440F-82C2-207D81E91772";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = armv7;
+			};
+			name = Release_NoRTTI;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		492EFACB0E3A1E5E00C654FA /* Build configuration list for PBXNativeTarget "Gemini" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492EFACC0E3A1E5E00C654FA /* Debug_NoRTTI */,
+				49D18938128DA54300FB4754 /* DebugOpt_NoRTTI */,
+				492EFACD0E3A1E5E00C654FA /* Release_NoRTTI */,
+				A4DF0D3F1321926400CD6A45 /* Shipping_NoRTTI */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug_NoRTTI;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Gemini" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug_NoRTTI */,
+				49D18936128DA54300FB4754 /* DebugOpt_NoRTTI */,
+				C01FCF5008A954540054247B /* Release_NoRTTI */,
+				A4DF0D3E1321926400CD6A45 /* Shipping_NoRTTI */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug_NoRTTI;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
