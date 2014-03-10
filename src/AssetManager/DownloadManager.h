@@ -1,5 +1,5 @@
-#ifndef __Example__DownloadManager__
-#define __Example__DownloadManager__
+#ifndef __Gemini__DownloadManager__
+#define __Gemini__DownloadManager__
 
 #include <string>
 #include <map>

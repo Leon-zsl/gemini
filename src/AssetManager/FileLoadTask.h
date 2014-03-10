@@ -1,5 +1,5 @@
-#ifndef __Example__FileLoadTask__
-#define __Example__FileLoadTask__
+#ifndef __Gemini__FileLoadTask__
+#define __Gemini__FileLoadTask__
 
 #include <string>
 

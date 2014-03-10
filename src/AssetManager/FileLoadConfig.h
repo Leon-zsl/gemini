@@ -1,5 +1,5 @@
-#ifndef Example_FileLoadConfig_h
-#define Example_FileLoadConfig_h
+#ifndef Gemini_FileLoadConfig_h
+#define Gemini_FileLoadConfig_h
 
 #include <string>
 

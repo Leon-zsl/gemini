@@ -1,5 +1,5 @@
-#ifndef __Example__MemoryManager__
-#define __Example__MemoryManager__
+#ifndef __Gemini__MemoryManager__
+#define __Gemini__MemoryManager__
 
 #include <stdlib.h>
 

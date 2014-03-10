@@ -1,5 +1,5 @@
-#ifndef __Example__LogDelegate__
-#define __Example__LogDelegate__
+#ifndef __Gemini__LogDelegate__
+#define __Gemini__LogDelegate__
 
 #include "FxGameDelegate.h"
 

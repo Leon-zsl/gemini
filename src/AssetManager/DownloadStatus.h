@@ -1,5 +1,5 @@
-#ifndef Example_DownloadStatus_h
-#define Example_DownloadStatus_h
+#ifndef Gemini_DownloadStatus_h
+#define Gemini_DownloadStatus_h
 
 namespace base
 {

@@ -1,11 +1,3 @@
-//
-//  DelegateManager.cpp
-//  MagicTT
-//
-//  Created by tao.wu on 13-4-8.
-//
-//
-
 //#include "Packet.h"
 #include "GameDelegateManager.h"
 

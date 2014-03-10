@@ -1,5 +1,5 @@
-#ifndef Example_PathUtil_h
-#define Example_PathUtil_h
+#ifndef Gemini_PathUtil_h
+#define Gemini_PathUtil_h
 
 #include <string>
 

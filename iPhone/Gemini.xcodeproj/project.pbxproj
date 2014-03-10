@@ -115,7 +115,6 @@
 		15F75DEA18CDCDEF00B5214A /* GameDelegateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDelegateManager.h; sourceTree = "<group>"; };
 		15F75DEB18CDCDEF00B5214A /* LogDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogDelegate.cpp; sourceTree = "<group>"; };
 		15F75DEC18CDCDEF00B5214A /* LogDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogDelegate.h; sourceTree = "<group>"; };
-		15F75DED18CDCDEF00B5214A /* MagicDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicDelegate.h; sourceTree = "<group>"; };
 		15F75DEE18CDCDEF00B5214A /* PacketDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PacketDelegate.cpp; sourceTree = "<group>"; };
 		15F75DEF18CDCDEF00B5214A /* PacketDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketDelegate.h; sourceTree = "<group>"; };
 		15F75DF018CDCDEF00B5214A /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
@@ -236,7 +235,6 @@
 				15F75DEA18CDCDEF00B5214A /* GameDelegateManager.h */,
 				15F75DEB18CDCDEF00B5214A /* LogDelegate.cpp */,
 				15F75DEC18CDCDEF00B5214A /* LogDelegate.h */,
-				15F75DED18CDCDEF00B5214A /* MagicDelegate.h */,
 				15F75DEE18CDCDEF00B5214A /* PacketDelegate.cpp */,
 				15F75DEF18CDCDEF00B5214A /* PacketDelegate.h */,
 				15F75DF018CDCDEF00B5214A /* Singleton.h */,

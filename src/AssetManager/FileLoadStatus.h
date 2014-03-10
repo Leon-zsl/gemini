@@ -1,5 +1,5 @@
-#ifndef Example_FileLoadStatus_h
-#define Example_FileLoadStatus_h
+#ifndef Gemini_FileLoadStatus_h
+#define Gemini_FileLoadStatus_h
 
 namespace base
 {

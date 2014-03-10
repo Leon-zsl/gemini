@@ -1,5 +1,5 @@
-#ifndef __Example_SimpleAllocator__
-#define __Example_SimpleAllocator__
+#ifndef __Gemini_SimpleAllocator__
+#define __Gemini_SimpleAllocator__
 
 #include <stdlib.h>
 

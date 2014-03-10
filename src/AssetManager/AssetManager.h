@@ -1,5 +1,5 @@
-#ifndef __Example__AssetManager__
-#define __Example__AssetManager__
+#ifndef __Gemini__AssetManager__
+#define __Gemini__AssetManager__
 
 #include <string>
 #include <map>

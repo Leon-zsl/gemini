@@ -1,5 +1,5 @@
-#ifndef __Example__DownloadToMemoryTask__
-#define __Example__DownloadToMemoryTask__
+#ifndef __Gemini__DownloadToMemoryTask__
+#define __Gemini__DownloadToMemoryTask__
 
 #include <string>
 

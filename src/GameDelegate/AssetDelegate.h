@@ -1,5 +1,5 @@
-#ifndef __Example__AssetDelegate__
-#define __Example__AssetDelegate__
+#ifndef __Gemini__AssetDelegate__
+#define __Gemini__AssetDelegate__
 
 #include "FxGameDelegate.h"
 #include "AssetManager.h"

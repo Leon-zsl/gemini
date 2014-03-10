@@ -1,5 +1,5 @@
-#ifndef __Example__PacketSock__
-#define __Example__PacketSock__
+#ifndef __Gemini__PacketSock__
+#define __Gemini__PacketSock__
 
 #include <queue>
 #include <string>

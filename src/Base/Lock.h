@@ -1,5 +1,5 @@
-#ifndef __Example_Lock__
-#define __Example_Lock__
+#ifndef __Gemini_Lock__
+#define __Gemini_Lock__
 
 #include <pthread.h>
 

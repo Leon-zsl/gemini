@@ -1,5 +1,5 @@
-#ifndef __Example__FileLoader__
-#define __Example__FileLoader__
+#ifndef __Gemini__FileLoader__
+#define __Gemini__FileLoader__
 
 #include <map>
 #include <vector>

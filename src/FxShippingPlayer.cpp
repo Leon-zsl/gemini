@@ -16,8 +16,9 @@ otherwise accompanies this software in either electronic or hard copy form.
 
 #include "curl.h"
 
-#include "MagicDelegate.h"
 #include "SockMgr.h"
+#include "AssetManager.h"
+#include "GameDelegateManager.h"
 #include "FxShippingPlayer.h"
 
 // Scaleform Includes
@@ -77,6 +78,7 @@ using GFx::Event;
 //#define FXPLAYER_FILENAME   "flash.swf"
 #define FXPLAYER_FILENAME   "main.swf"
 
+#include "AssetManagerConfig.h"
 
 SF_PLATFORM_SYSTEM_APP(FxShippingPlayer, Scaleform::GFx::System, FxShippingPlayer);
 
@@ -195,7 +197,7 @@ void FxShippingPlayer::InitArgDescriptions(Args* args)
     BaseClass::InitArgDescriptions(args);
     ArgDesc options []=
     {
-        //      {"","--------------spacer example------------------\n","",FxCmdOption::Spacer,""},
+        //      {"","--------------spacer Gemini------------------\n","",FxCmdOption::Spacer,""},
         {"",    "FileName",  Args::StringOption | Args::Positional, NULL, "GFX or SWF file to load at startup"},
         {"t",   "ExitTimeout",         Args::FloatOption, "0.0",
         "<sec>    Timeout and exit after the specified number of seconds."},

@@ -1,5 +1,5 @@
-#ifndef __Example__PacketDelegate__
-#define __Example__PacketDelegate__
+#ifndef __Gemini__PacketDelegate__
+#define __Gemini__PacketDelegate__
 
 #include <iostream>
 #include <map>
@@ -41,4 +41,4 @@ private:
 //    static char* _buffer;
 };
 
-#endif /* defined(__Example__PacketDelegate__) */
+#endif /* defined(__Gemini__PacketDelegate__) */

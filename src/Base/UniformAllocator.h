@@ -1,5 +1,5 @@
-#ifndef __Example_UniformAllocator__
-#define __Example_UniformAllocator__
+#ifndef __Gemini_UniformAllocator__
+#define __Gemini_UniformAllocator__
 
 #include "Lock.h"
 

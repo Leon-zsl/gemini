@@ -1,5 +1,5 @@
-#ifndef __Example_Guard__
-#define __Example_Guard__
+#ifndef __Gemini_Guard__
+#define __Gemini_Guard__
 
 namespace base
 {

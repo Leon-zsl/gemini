@@ -1,5 +1,5 @@
-#ifndef __Example_DownloadToFileTask__
-#define __Example_DownloadToFileTask__
+#ifndef __Gemini_DownloadToFileTask__
+#define __Gemini_DownloadToFileTask__
 
 #include <string>
 #include <stdio.h>

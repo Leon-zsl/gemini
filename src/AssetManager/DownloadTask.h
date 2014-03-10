@@ -1,5 +1,5 @@
-#ifndef Example_DownloadTask_h
-#define Example_DownloadTask_h
+#ifndef Gemini_DownloadTask_h
+#define Gemini_DownloadTask_h
 
 #include "Runner.h"
 

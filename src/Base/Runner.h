@@ -1,5 +1,5 @@
-#ifndef __Example_Runner__
-#define __Example_Runner__
+#ifndef __Gemini_Runner__
+#define __Gemini_Runner__
 
 namespace base
 {

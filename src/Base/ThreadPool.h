@@ -1,5 +1,5 @@
-#ifndef __Example_ThreadPool__
-#define __Example_ThreadPool__
+#ifndef __Gemini_ThreadPool__
+#define __Gemini_ThreadPool__
 
 #include <set>
 

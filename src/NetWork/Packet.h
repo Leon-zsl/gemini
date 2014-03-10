@@ -1,5 +1,5 @@
-#ifndef __Example__Packet__
-#define __Example__Packet__
+#ifndef __Gemini__Packet__
+#define __Gemini__Packet__
 
 #include <iostream>
 
@@ -25,4 +25,4 @@ private:
     char* _data;
 };
 }
-#endif /* defined(__Example__Packet__) */
+#endif /* defined(__Gemini__Packet__) */

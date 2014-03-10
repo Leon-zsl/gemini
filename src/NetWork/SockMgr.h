@@ -1,5 +1,5 @@
-#ifndef __Example__SockMgr__
-#define __Example__SockMgr__
+#ifndef __Gemini__SockMgr__
+#define __Gemini__SockMgr__
 
 #include <map>
 #include <pthread.h>

@@ -1,5 +1,5 @@
-#ifndef __Example_DownloadConfig__
-#define __Example_DownloadConfig__
+#ifndef __Gemini_DownloadConfig__
+#define __Gemini_DownloadConfig__
 
 #include <string>
 

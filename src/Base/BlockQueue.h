@@ -1,5 +1,5 @@
-#ifndef __Example_BlockQueue__
-#define __Example_BlockQueue__
+#ifndef __Gemini_BlockQueue__
+#define __Gemini_BlockQueue__
 
 #include <queue>
 

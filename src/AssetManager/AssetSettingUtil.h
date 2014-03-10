@@ -1,5 +1,5 @@
-#ifndef __Example__AssetSettingUtil__
-#define __Example__AssetSettingUtil__
+#ifndef __Gemini__AssetSettingUtil__
+#define __Gemini__AssetSettingUtil__
 
 #include <map>
 #include <string>

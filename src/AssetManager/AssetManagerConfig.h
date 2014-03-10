@@ -1,5 +1,5 @@
-#ifndef Example_AssetManagerConfig_h
-#define Example_AssetManagerConfig_h
+#ifndef Gemini_AssetManagerConfig_h
+#define Gemini_AssetManagerConfig_h
 
 #include <string>
 

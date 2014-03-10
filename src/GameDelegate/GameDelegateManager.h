@@ -1,18 +1,15 @@
-//
-//  DelegateManager.h
-//  MagicTT
-//
-//  Created by tao.wu on 13-4-8.
-//
-//
-
-#ifndef __MagicTT__GameDelegateManager__
-#define __MagicTT__GameDelegateManager__
+#ifndef __Gemini__GameDelegateManager__
+#define __Gemini__GameDelegateManager__
 
 #include <iostream>
 #include <string>
-#include "MagicDelegate.h"
+
 #include "Singleton.h"
+#include "FxGameDelegate.h"
+
+#include "AssetDelegate.h"
+#include "LogDelegate.h"
+#include "PacketDelegate.h"
 
 class FxShippingPlayer;
 
@@ -43,4 +40,4 @@ public:
 };
 
 
-#endif /* defined(__MagicTT__GameDelegateManager__) */
+#endif

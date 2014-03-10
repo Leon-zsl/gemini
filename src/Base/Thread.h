@@ -1,5 +1,5 @@
-#ifndef __Example_Thread__
-#define __Example_Thread__
+#ifndef __Gemini_Thread__
+#define __Gemini_Thread__
 
 #include <pthread.h>
 //#include <semaphore.h>

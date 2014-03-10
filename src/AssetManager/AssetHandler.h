@@ -1,5 +1,5 @@
-#ifndef Example_AssetHandler_h
-#define Example_AssetHandler_h
+#ifndef Gemini_AssetHandler_h
+#define Gemini_AssetHandler_h
 
 #include <string>
 

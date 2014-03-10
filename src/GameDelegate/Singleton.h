@@ -1,13 +1,5 @@
-//
-//  Singleton.h
-//  MagicTT
-//
-//  Created by tao.wu on 13-4-10.
-//
-//
-
-#ifndef MagicTT_Singleton_h
-#define MagicTT_Singleton_h
+#ifndef Gemini_Singleton_h
+#define Gemini_Singleton_h
 
 #include <memory>
 #include <iostream>

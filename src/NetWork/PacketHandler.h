@@ -1,5 +1,5 @@
-#ifndef Example_PacketHandler_h
-#define Example_PacketHandler_h
+#ifndef Gemini_PacketHandler_h
+#define Gemini_PacketHandler_h
 
 namespace base
 {

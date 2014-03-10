@@ -1,5 +1,5 @@
-#ifndef __Example__GlobalAllocator__
-#define __Example__GlobalAllocator__
+#ifndef __Gemini__GlobalAllocator__
+#define __Gemini__GlobalAllocator__
 
 #include "Lock.h"
 
