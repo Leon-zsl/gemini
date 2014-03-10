@@ -13,14 +13,14 @@ void GameDelegateManager::UnRegisterDelegateHandler()
     
 }
 
-void GameDelegateManager::OnInit(FxShippingPlayer* player, Loader &loader,
-                                 const std::string& serverIp, short serverPort)
+void GameDelegateManager::OnInit(FxShippingPlayer* player, Loader &loader)
 {
     pGameDelegate   = *new FxDelegate();
-    pPacketDelegate = *new PacketDelegate();
-    pAssetDelegate  = *new AssetDelegate();
     pLogDelegate    = *new LogDelegate();
-    //pPacketDelegate->ConnectServer(serverIp, serverPort);
+    pPacketDelegate = *new PacketDelegate();
+    pPacketDelegate->OnInit();
+    pAssetDelegate  = *new AssetDelegate();
+    pAssetDelegate->OnInit();
     
     loader.SetExternalInterface(pGameDelegate);
     

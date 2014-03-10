@@ -17,12 +17,14 @@ namespace base
 class AssetManager : public Singleton<AssetManager>
 {
 public:
+    AssetManager();
     ~AssetManager();
     
     //the mgr can not work properly until this method return true
     bool Prepared() const { return _prepared; }
+    void Prepare(AssetManagerConfig conf);
     
-    void Startup(AssetManagerConfig conf);
+    void Startup();
     void Shutdown();
     void Update();
 

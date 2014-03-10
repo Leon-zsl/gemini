@@ -16,6 +16,7 @@ public:
     
     base::PacketSock* GetSock(const std::string& name) { return _socks[name]; }
 
+    void OnInit() {}
     void ConnectServer(const std::string& name, const std::string& ip, short port);
     void DisconnectServer(const std::string& name);
     void SendPacket(const std::string& name, const base::Packet& pck);

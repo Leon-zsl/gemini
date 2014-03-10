@@ -57,9 +57,9 @@ void PacketDelegate::SendPacket(const std::string& name, const base::Packet& pck
 
 void PacketDelegate::Accept(FxDelegateHandler::CallbackProcessor* cbreg)
 {
-    cbreg->Process("_TransferMsgFromSF", PacketDelegate::_TransferMsgFromSF);
-    cbreg->Process("_ConnectServer", PacketDelegate::_ConnectServer);
-    cbreg->Process("_DisconnectServer", PacketDelegate::_DisconnectServer);
+    cbreg->Process("Packet_TransferMsgFromSF", PacketDelegate::_TransferMsgFromSF);
+    cbreg->Process("Packet_ConnectServer", PacketDelegate::_ConnectServer);
+    cbreg->Process("Packet_DisconnectServer", PacketDelegate::_DisconnectServer);
 }
 
 void PacketDelegate::HandlePacket(base::PacketSock* sock, const base::Packet& pck)
@@ -96,7 +96,7 @@ void PacketDelegate::HandlePacket(base::PacketSock* sock, const base::Packet& pc
     args[0].SetString(name.c_str());
     args[1].SetInt(pck.Opcode());
     args[2].SetString(buf);
-    FxShippingPlayer::pApp->pMovie->Invoke("_level0.packetDispathcer._recvPacket", NULL, args, 3);
+    FxShippingPlayer::pApp->pMovie->Invoke("_level0.c2f.packetDispathcer._recvPacket", NULL, args, 3);
     
     if(heap_buffer != NULL)
         delete[] heap_buffer;
@@ -117,7 +117,7 @@ void PacketDelegate::HandleError(base::PacketSock* sock, int error)
     Scaleform::GFx::Value args[2];
     args[0].SetString(name.c_str());
     args[1].SetInt(error);
-    FxShippingPlayer::pApp->pMovie->Invoke("_level0.packetDispathcer._connError", NULL, args, 2);
+    FxShippingPlayer::pApp->pMovie->Invoke("_level0.c2f.packetDispathcer._connError", NULL, args, 2);
 }
 
 void PacketDelegate::_TransferMsgFromSF(const FxDelegateArgs& params)

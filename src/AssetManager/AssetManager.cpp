@@ -6,6 +6,13 @@
 
 namespace base
 {
+AssetManager::AssetManager()
+{
+    _file_loader = new FileLoader();
+    _download_mgr = new DownloadManager();
+    _prepared = false;
+}
+
 AssetManager::~AssetManager()
 {
     Shutdown();
@@ -14,27 +21,10 @@ AssetManager::~AssetManager()
     delete _download_mgr;
 }
 
-void AssetManager::Startup(AssetManagerConfig conf)
+void AssetManager::Startup(void)
 {
-    FileLoadConfig fc;
-    fc.file_path = conf.local_addr;
-    _file_loader = new FileLoader();
-    _file_loader->Config(fc);
-    
-    DownloadConfig df;
-    df.localDir = conf.local_addr;
-    df.serverAddr = conf.remote_addr;
-    df.maxDownloadTask = conf.task_parallel;
-    _download_mgr = new DownloadManager();
-    _download_mgr->Config(df);
-    
-    _settings_file = conf.settings_file;
-    _prepared = false;
-    
     _file_loader->Startup();
     _download_mgr->Startup();
-    
-    _file_loader->LoadFile(_settings_file, OnLoadSettings, this);
 }
 
 void AssetManager::Shutdown()
@@ -53,6 +43,25 @@ void AssetManager::Update()
 {
     _download_mgr->Update();
     _file_loader->Update();
+}
+    
+void AssetManager::Prepare(base::AssetManagerConfig conf)
+{
+    if(_prepared) return;
+    
+    FileLoadConfig fc;
+    fc.file_path = conf.local_addr;
+    _file_loader->Config(fc);
+    
+    DownloadConfig df;
+    df.localDir = conf.local_addr;
+    df.serverAddr = conf.remote_addr;
+    df.maxDownloadTask = conf.task_parallel;
+    _download_mgr->Config(df);
+
+    _settings_file = conf.settings_file;
+    
+    _file_loader->LoadFile(_settings_file, OnLoadSettings, this);
 }
     
 void AssetManager::GetAssetFile(const std::string& asset, AssetFileHandler* h)

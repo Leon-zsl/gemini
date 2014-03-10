@@ -982,16 +982,9 @@ bool FxShippingPlayer::OnInit(Platform::ViewConfig& config)
         SF_DEBUG_WARNING1(1, "Failed to load %s", FileName.ToCStr());
 
     base::SockMgr::Instance()->Start();
-    
-    base::AssetManagerConfig conf;
-    //conf.remote_addr = "http://127.0.0.1";
-    conf.remote_addr = "http://10.80.130.123";
-    conf.local_addr = GetContentDirectory();
-    conf.settings_file = "index.info";
-    conf.task_parallel = 8;
-    base::AssetManager::Instance()->Startup(conf);
-    
-    GameDelegateManager::Instance()->OnInit(this, mLoader, std::string("127.0.0.1"), 20000);
+    base::AssetManager::Instance()->Startup();
+
+    GameDelegateManager::Instance()->OnInit(this, mLoader);
 //    GameStateManager::Instance()->OnInit();
 //    GameDownloadStateManager::Instance()->OnInit();
     //GameSoundManager::Instance()->OnInit();

@@ -31,8 +31,7 @@ private:
 public:
     void RegisterDelegateHandler();
     void UnRegisterDelegateHandler();
-    void OnInit(FxShippingPlayer* player, Loader &loader,
-                const std::string& serverIp, short serverPort);
+    void OnInit(FxShippingPlayer* player, Loader &loader);
     void OnShutDown();
     void OnUpdate();
     
