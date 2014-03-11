@@ -20,7 +20,7 @@ public:
         if(status.errcode == ASSET_OK) {
             args[3].WriteToByteArray((const UByte*)status.data, status.len);
         }
-        FxShippingPlayer::pApp->pMovie->Invoke("_level0.main.c2f.assetLoader._onLoadAsset", NULL, args, 4);
+        FxShippingPlayer::pApp->pMovie->Invoke("_level0.c2f.assetLoader._onLoadAsset", NULL, args, 4);
         
         //trick code!!!
         delete this;
@@ -39,6 +39,7 @@ public:
         args[1].SetInt(status.status);
         args[2].SetInt(status.internal_errorcode);
         args[3].SetString(status.full_path.c_str());
+        printf("movie file handler\n");
         FxShippingPlayer::pApp->pMovie->Invoke("_level0.main.c2f.assetLoader._onGetAssetFile", NULL, args, 4);
         
         //trick code!!!

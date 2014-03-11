@@ -96,7 +96,7 @@ void PacketDelegate::HandlePacket(base::PacketSock* sock, const base::Packet& pc
     args[0].SetString(name.c_str());
     args[1].SetInt(pck.Opcode());
     args[2].SetString(buf);
-    FxShippingPlayer::pApp->pMovie->Invoke("_level0.main.c2f.packetDispathcer._recvPacket", NULL, args, 3);
+    FxShippingPlayer::pApp->pMovie->Invoke("_level0.c2f.packetDispathcer._recvPacket", NULL, args, 3);
     
     if(heap_buffer != NULL)
         delete[] heap_buffer;
@@ -117,7 +117,7 @@ void PacketDelegate::HandleError(base::PacketSock* sock, int error)
     Scaleform::GFx::Value args[2];
     args[0].SetString(name.c_str());
     args[1].SetInt(error);
-    FxShippingPlayer::pApp->pMovie->Invoke("_level0.main.c2f.packetDispathcer._connError", NULL, args, 2);
+    FxShippingPlayer::pApp->pMovie->Invoke("_level0.c2f.packetDispathcer._connError", NULL, args, 2);
 }
 
 void PacketDelegate::_TransferMsgFromSF(const FxDelegateArgs& params)
