@@ -76,9 +76,7 @@ using GFx::Event;
 
 // SWF Filename we will load by default.
 //#define FXPLAYER_FILENAME   "flash.swf"
-#define FXPLAYER_FILENAME   "main.swf"
-
-#include "AssetManagerConfig.h"
+#define FXPLAYER_FILENAME   "gemini.swf"
 
 SF_PLATFORM_SYSTEM_APP(FxShippingPlayer, Scaleform::GFx::System, FxShippingPlayer);
 

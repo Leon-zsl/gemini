@@ -2,7 +2,7 @@
 #define __Gemini_Thread__
 
 #include <pthread.h>
-//#include <semaphore.h>
+#include <semaphore.h>
 
 #include "Runner.h"
 #include "Lock.h"
@@ -35,9 +35,10 @@ private:
 
 private:
     //Lock _lock;
-    
-    pthread_cond_t cond;
-    pthread_mutex_t mutex;
+
+    sem_t _sem;
+//    pthread_cond_t cond;
+//    pthread_mutex_t mutex;
     //pthread_t _handle;
     
     volatile bool _quit;

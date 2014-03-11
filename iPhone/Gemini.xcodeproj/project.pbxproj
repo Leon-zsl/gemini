@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15B2EE2E18CED8A100C8E023 /* gemini.swf in Resources */ = {isa = PBXBuildFile; fileRef = 15B2EE2D18CED8A100C8E023 /* gemini.swf */; };
 		15F75D3C18CDC2B600B5214A /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 15F75D3418CDC2B600B5214A /* Icon-72.png */; };
 		15F75D3D18CDC2B600B5214A /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 15F75D3518CDC2B600B5214A /* Icon-Small-50.png */; };
 		15F75D3E18CDC2B600B5214A /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 15F75D3618CDC2B600B5214A /* Icon-Small.png */; };
@@ -43,7 +44,6 @@
 		15F75E0C18CDCDEF00B5214A /* PacketSock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DF518CDCDEF00B5214A /* PacketSock.cpp */; };
 		15F75E0D18CDCDEF00B5214A /* SockMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75DF718CDCDEF00B5214A /* SockMgr.cpp */; };
 		15F75E1218CDCE2C00B5214A /* FxShippingPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F75E0F18CDCE2C00B5214A /* FxShippingPlayer.cpp */; };
-		15F75E1418CDD12000B5214A /* main.swf in Resources */ = {isa = PBXBuildFile; fileRef = 15F75E1318CDD12000B5214A /* main.swf */; };
 		4919930E13020A8100985437 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919930D13020A8100985437 /* AudioToolbox.framework */; };
 		4919931013020A8100985437 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919930F13020A8100985437 /* CoreAudio.framework */; };
 		492EFAC70E3A1E5E00C654FA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F100CC0E031B0900F8734A /* OpenGLES.framework */; };
@@ -54,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15B2EE2D18CED8A100C8E023 /* gemini.swf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gemini.swf; path = ../flash/swf/gemini.swf; sourceTree = "<group>"; };
 		15F75D3418CDC2B600B5214A /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		15F75D3518CDC2B600B5214A /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
 		15F75D3618CDC2B600B5214A /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
@@ -128,7 +129,6 @@
 		15F75E0F18CDCE2C00B5214A /* FxShippingPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FxShippingPlayer.cpp; path = ../src/FxShippingPlayer.cpp; sourceTree = "<group>"; };
 		15F75E1018CDCE2C00B5214A /* FxShippingPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FxShippingPlayer.h; path = ../src/FxShippingPlayer.h; sourceTree = "<group>"; };
 		15F75E1118CDCE2C00B5214A /* FxShippingPlayerOptions_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FxShippingPlayerOptions_iPhone.h; path = ../src/FxShippingPlayerOptions_iPhone.h; sourceTree = "<group>"; };
-		15F75E1318CDD12000B5214A /* main.swf */ = {isa = PBXFileReference; lastKnownFileType = file; name = main.swf; path = ../flash/swf/main.swf; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4919930D13020A8100985437 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -295,7 +295,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				15F75E1318CDD12000B5214A /* main.swf */,
+				15B2EE2D18CED8A100C8E023 /* gemini.swf */,
 				15F75D5118CDC50D00B5214A /* Default-568h@2x.png */,
 				15F75D3418CDC2B600B5214A /* Icon-72.png */,
 				15F75D3518CDC2B600B5214A /* Icon-Small-50.png */,
@@ -383,9 +383,9 @@
 				15F75D4118CDC2B600B5214A /* Info.plist.new in Resources */,
 				15F75D4318CDC2B600B5214A /* MainWindow.xib in Resources */,
 				15F75D3D18CDC2B600B5214A /* Icon-Small-50.png in Resources */,
+				15B2EE2E18CED8A100C8E023 /* gemini.swf in Resources */,
 				15F75D4018CDC2B600B5214A /* Info.plist in Resources */,
 				15F75D3E18CDC2B600B5214A /* Icon-Small.png in Resources */,
-				15F75E1418CDD12000B5214A /* main.swf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

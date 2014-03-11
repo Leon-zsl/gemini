@@ -124,7 +124,7 @@ void ThreadPool::_WaitEnding()
 void ThreadPool::Schedule(Runner* runner)
 {
     if(runner == NULL) return;
-
+    
     Thread* th = NULL;
     _lock->lock();
     if(_free_threads.empty()) {

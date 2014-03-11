@@ -9,13 +9,14 @@ class AssetDelegate : public FxDelegateHandler
 public:
     AssetDelegate() {}
     
-    void OnInit();
+    void OnInit() {}
     virtual void Accept(FxDelegateHandler::CallbackProcessor* cbreg);
     
     static void _LoadAsset(const FxDelegateArgs& params);
     static void _GetAssetFile(const FxDelegateArgs& params);
     static void _Prepare(const FxDelegateArgs& params);
     static void _Prepared(const FxDelegateArgs& params);
+    static void _LoadMainSwf(const FxDelegateArgs& params);
     
 private:
     AssetDelegate(AssetDelegate& val);

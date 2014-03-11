@@ -72,7 +72,7 @@ void DownloadManager::DownloadToFile(const std::string &file, D2FFinish cb, void
     info.d2f.push_back(cb);
     info.user_ptrs.push_back(uptr);
     _wait_map[key] = info;
-    
+
     //_map_lock.unlock();
 }
 
