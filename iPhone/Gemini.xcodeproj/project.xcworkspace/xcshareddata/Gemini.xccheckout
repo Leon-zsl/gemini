@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4FCC6C17-C88B-45AC-8C49-DCEAB9B5DAF5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Gemini</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E12A5011-3DAC-4FCE-AE07-5B703F25AC82</key>
+		<string>https://github.com/Leon-zsl/gemini.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iPhone/Gemini.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E12A5011-3DAC-4FCE-AE07-5B703F25AC82</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Leon-zsl/gemini.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E12A5011-3DAC-4FCE-AE07-5B703F25AC82</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E12A5011-3DAC-4FCE-AE07-5B703F25AC82</string>
+			<key>IDESourceControlWCCName</key>
+			<string>gemini</string>
+		</dict>
+	</array>
+</dict>
+</plist>
