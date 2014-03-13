@@ -101,9 +101,11 @@ void AssetDelegate::_Prepare(const FxDelegateArgs& params)
 
 void AssetDelegate::_Prepared(const FxDelegateArgs& params)
 {
-    Scaleform::GFx::Value args[1];
+    std::string func = "_level0.";
+    func += params[0].GetString();
+    Scaleform::GFx::Value args[2];
     args[0].SetBoolean(base::AssetManager::Instance()->Prepared());
-    FxShippingPlayer::pApp->pMovie->Invoke("_level0._onPrepared", NULL, args, 1);
+    FxShippingPlayer::pApp->pMovie->Invoke(func.c_str(), NULL, args, 1);
 }
 
 void AssetDelegate::_LoadMainSwf(const FxDelegateArgs& params)

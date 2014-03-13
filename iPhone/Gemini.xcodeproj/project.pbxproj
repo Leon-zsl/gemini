@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		15B2EE2E18CED8A100C8E023 /* gemini.swf in Resources */ = {isa = PBXBuildFile; fileRef = 15B2EE2D18CED8A100C8E023 /* gemini.swf */; };
+		15CC1DBC18D1935A00D6BFC4 /* FxSoundFMOD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15CC1DBB18D1935A00D6BFC4 /* FxSoundFMOD.cpp */; };
 		15F75D3C18CDC2B600B5214A /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 15F75D3418CDC2B600B5214A /* Icon-72.png */; };
 		15F75D3D18CDC2B600B5214A /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 15F75D3518CDC2B600B5214A /* Icon-Small-50.png */; };
 		15F75D3E18CDC2B600B5214A /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 15F75D3618CDC2B600B5214A /* Icon-Small.png */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		15B2EE2D18CED8A100C8E023 /* gemini.swf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gemini.swf; path = ../flash/swf/gemini.swf; sourceTree = "<group>"; };
+		15CC1DBB18D1935A00D6BFC4 /* FxSoundFMOD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FxSoundFMOD.cpp; path = ../../../../scaleform_4.2_ios_estore/Apps/Samples/Common/FxSoundFMOD.cpp; sourceTree = "<group>"; };
 		15F75D3418CDC2B600B5214A /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		15F75D3518CDC2B600B5214A /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
 		15F75D3618CDC2B600B5214A /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				15F75D4B18CDC41400B5214A /* FxSharedObjectManager.cpp */,
+				15CC1DBB18D1935A00D6BFC4 /* FxSoundFMOD.cpp */,
 				15F75D4918CDC3D300B5214A /* Platform_IPhone_GL.mm */,
 				15F75D4718CDC2FB00B5214A /* FxOnlineGameSystem.mm */,
 				15F75D4518CDC2DC00B5214A /* FxRenderThread.cpp */,
@@ -397,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15F75DFF18CDCDEF00B5214A /* FileLoadTask.cpp in Sources */,
+				15CC1DBC18D1935A00D6BFC4 /* FxSoundFMOD.cpp in Sources */,
 				15F75D4618CDC2DC00B5214A /* FxRenderThread.cpp in Sources */,
 				15F75DFA18CDCDEF00B5214A /* AssetSettingUtil.cpp in Sources */,
 				15F75E0418CDCDEF00B5214A /* Thread.cpp in Sources */,
@@ -460,7 +464,11 @@
 					"~/scaleform_4.2_ios_estore/3rdParty/fmod/iPhone/lib",
 					"\"$(SRCROOT)/../lib\"",
 				);
-				OTHER_CFLAGS = "-DSF_BUILD_DEBUG";
+				OTHER_CFLAGS = (
+					"-DGFX_ENABLE_SOUND",
+					"-DSF_BUILD_DEBUG",
+					"-DGFX_SOUND_FMOD",
+				);
 				OTHER_LDFLAGS = (
 					"-lgfx",
 					"-lgfxrender_gl",
@@ -475,6 +483,8 @@
 					"-ljpeg",
 					"-lz",
 					"-lcurl",
+					"-lfmodexL_iphoneos",
+					"-lgfxsound_fmod",
 				);
 				PRODUCT_NAME = Gemini;
 				SDKROOT = iphoneos;
@@ -512,7 +522,10 @@
 					"\"~/scaleform_4.2_ios_estore/3rdParty/fmod/iPhone/lib\"",
 					"\"$(SRCROOT)/../lib\"",
 				);
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = (
+					"-DGFX_ENABLE_SOUND",
+					"-DGFX_SOUND_FMOD",
+				);
 				OTHER_LDFLAGS = (
 					"-lgfx",
 					"-lgfxrender_gl",
@@ -527,6 +540,8 @@
 					"-ljpeg",
 					"-lz",
 					"-lcurl",
+					"-lfmodexL_iphoneos",
+					"-lgfxsound_fmod",
 				);
 				PRODUCT_NAME = Gemini;
 				SDKROOT = iphoneos;
@@ -604,6 +619,8 @@
 					"-ljpeg",
 					"-lz",
 					"-lcurl",
+					"-lfmodexL_iphoneos",
+					"-lgfxsound_fmod",
 				);
 				PRODUCT_NAME = Gemini;
 				SDKROOT = iphoneos;
@@ -690,7 +707,11 @@
 					"\"~/scaleform_4.2_ios_estore/3rdParty/fmod/iPhone/lib\"",
 					"\"$(SRCROOT)/../lib\"",
 				);
-				OTHER_CFLAGS = "-DSF_BUILD_SHIPPING";
+				OTHER_CFLAGS = (
+					"-DSF_BUILD_SHIPPING",
+					"-DGFX_SOUND_FMOD",
+					"-DGFX_ENABLE_SOUND",
+				);
 				OTHER_LDFLAGS = (
 					"-lgfx",
 					"-lgfxrender_gl",
@@ -705,6 +726,8 @@
 					"-ljpeg",
 					"-lz",
 					"-lcurl",
+					"-lfmodexL_iphoneos",
+					"-lgfxsound_fmod",
 				);
 				PRODUCT_NAME = Gemini;
 				SDKROOT = iphoneos;
